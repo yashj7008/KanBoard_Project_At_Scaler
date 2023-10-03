@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Preahvihear', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding:3rem;
+    background-image: url(Background_img.webp) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.form-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+
+.form-wrapper input{
+    display: flex;
+    flex-basis: 300px;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background: #3498db;
+    color: white;
+
+}
+
+::placeholder {
+    color: white;
+  }
+
+.form-wrapper button{
+    padding: 0.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    flex-basis: 200px;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background: #3498db;
+    color: white;
+    
+}
+
+
+#task-form{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.task-wrapper{
+    margin-block: 5rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 2rem;
+  
+}
+
+.task-wrapper h3{
+    font-size: 1.5rem;
+    
+}
+
+.task-wrapper p{
+    font-size: 0.8rem;
+}
+
+.task-lanes{
+    background-color: #c1e6f0;
+    padding: 1rem;
+    color: black;
+    min-height: 60vh;
+    box-shadow: 0px 9px 12px rgb(253, 253, 255);
+}
+
+.task{
+    background-color: rgb(13, 34, 58);
+    opacity: 1;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: move;
+    transition: all  0.5s;
+}
+
+.task:hover{
+    transform: scale(1.05);
+}
+
+.is-dragging{
+    transform: rotate3d(5deg);
+}
+
+.app-btns button{
+   padding: 0.3rem;
+   background: #3498db;
+   color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) translateZ(0);
+    transition: transform 0.3s;
+    cursor: pointer;
+
+
+   
+}
+
+.app-btns button:hover{
+    border-color: #3498db;
+}
+
