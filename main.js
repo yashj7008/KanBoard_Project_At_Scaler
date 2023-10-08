@@ -113,7 +113,7 @@ function recalculateTaskArr(task){
     sourceArr.splice(taskIndex,1);
     targetArr.push(task);
     
-
+``
     if(source == 'todo-lane'){
           todoItems = sourceArr;
     }else if (source == 'doing-lane'){
